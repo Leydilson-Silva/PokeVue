@@ -59,12 +59,6 @@ axios.get("https://pokeapi.co/api/v2/pokemon?limit=151&offset=0")
 - PokéAPI
 
 
-## Funcionalidades
-
-- Preview em tempo real
-- Responsividade
-
-
 ## 🔗 Contatos
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/Leydilson-Silva) 
 
