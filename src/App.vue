@@ -1,11 +1,10 @@
 <template>
   <div id="app">
-    <nav class="navbar is-primary is-fixed-top">
+    <nav class="navbar is-link is-fixed-top">
 
       <div class="navbar-brand">
         <a class="navbar-item" href="https://leydilson-silva.github.io/PokeVue/">
-          <img src="./assets/master.png" alt="Bulma: a modern CSS framework based on Flexbox">
-          <h4 class="title is-3">PokeVue</h4>
+          <img src="./assets/logos/logoFull.svg" alt="PokéVue logo">
 
         </a>
         <div class="navbar-burger" data-target="navbarExampleTransparentExample">
@@ -22,13 +21,13 @@
           <div class="field is-grouped">
             <p class="control">
 
-              <input class="input is-rounded is-focused is-primary" type="text" name="Busca" placeholder="Buscar Pokemon"
+              <input class="input is-rounded is-focused is-link" type="text" name="Busca" placeholder="Buscar Pokemon"
                 v-model="busca">
                 
             </p>
             <p class="control">
 
-              <button class="button is-primary" @click="buscar">Buscar</button>
+              <button class="button is-link" @click="buscar">Buscar</button>
 
             </p>
           </div>
@@ -38,7 +37,9 @@
 
 
     <div class="column container is-fullhd">
-      <h4 class="title is-1 title-red">Pokedex</h4>
+      <br>
+      <br>
+      <img src="./assets/logos/titleFull.svg" alt="PokéVue logo" >
       <!-- <input class="input is-rounded is-half" type="text" name="Busca" placeholder="Buscar Pokemon" v-model="busca">
       <button class="button is-medium is-success buscarBtn" @click="buscar">Buscar</button> -->
 

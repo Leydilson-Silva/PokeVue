@@ -1,7 +1,13 @@
 <template>
     <div id="pokemon">
         <div class="card">
-            <span class="tag is-rounded is-light">{{ number }}</span>
+            <div class="card-content">
+                <span class="tag is-rounded is-link is-light is-normal">{{ number }}</span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
             <div class="card-image">
                 <figure class="">
                     <img :src="currentImg" alt="pokemon image">
@@ -17,7 +23,7 @@
                 </div>
 
                 <div class="content">
-                    <button class="button is-medium is-fullwidth" @click="mudarSprite">Mudar sprite</button>
+                    <button class="button is-link is-medium is-fullwidth" @click="mudarSprite">Mudar sprite</button>
 
                 </div>
             </div>
@@ -59,19 +65,20 @@ export default {
         id: Number,
     },
     filters: {
-        
+
     },
-    
+
     methods: {
         mudarSprite: function () {
             if (this.isFront) {
                 this.isFront = false;
                 this.currentImg = this.pokemon.back;
-            }else {
+            } else {
                 this.isFront = true;
                 this.currentImg = this.pokemon.front;
             }
-        }
+        },
+
     },
 }
 </script>
